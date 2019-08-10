@@ -18,16 +18,11 @@ bodyClass: page-contact
     <div class="col-12 col-md-8">
       <ul>
         <li>
-          <a href="{{ site.data.contact.phone }}">
-
-
-          <strong>Schedule a call </strong>
-
-            </a>
-
+          <a href="{{ site.data.contact.phone }}"><strong>Schedule a call </strong></a>
         </li>
-        <li><strong>Direct message: </strong><a href="{{ site.data.contact.email }}">
-            {{ site.data.contact.email }}</a></li>
+        <li>
+          <a href="{{ site.data.contact.email }}"><strong>Direct message </strong></a>
+        </li>
         {% if site.data.contact.address %}
         <li><strong>Address: </strong>{{ site.data.contact.address }}</li>
         {% endif %}
