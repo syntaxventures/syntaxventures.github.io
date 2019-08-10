@@ -17,7 +17,9 @@ bodyClass: page-contact
   <div class="row">
     <div class="col-12 col-md-8">
       <ul>
-        <li><strong>Schedule a call: </strong><a href="{{ site.data.contact.phone }}"></li>
+        <li><strong>Schedule a call: </strong><a href="{{ site.data.contact.phone }}">
+            {{ site.data.contact.phone }}</a>
+        </li>
         <li><strong>Direct message: </strong><a href="{{ site.data.contact.email }}">
             {{ site.data.contact.email }}</a></li>
         {% if site.data.contact.address %}
