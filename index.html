@@ -30,7 +30,7 @@ bodyClass: page-home
 <div class="container pt-8 pt-md-10">
   <div class="row justify-content-start">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-3">Target Sectors</h2>
+      <h2 class="title-3 text-dark mb-3">Target Spaces</h2>
     </div>
     {% for service in site.services %}
     <div class="col-12 col-md-4 mb-1">
@@ -39,13 +39,13 @@ bodyClass: page-home
           <h2 class="service-title">
             <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
           </h2>
-          {{ service.content | markdownify | strip_html | truncate: 50 }}
+          {{ service.content | markdownify | strip_html | truncate: 75 }}
         </div>
       </div>
     </div>
     {% endfor %}
     <div class="col-12 text-center">
-      <a class="button button-primary mt-2" href="{{site.baseurl}}/services">View All</a>
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/services">View Details</a>
     </div>
   </div>
 </div>
@@ -53,7 +53,7 @@ bodyClass: page-home
 <div class="container pt-5 pb-5 pt-md-7 pb-md-7">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-4">Core Focus</h2>
+      <h2 class="title-3 text-dark mb-4">Core Success Drivers</h2>
     </div>
     {% for feature in site.data.features %}
     <div class="col-12 col-md-6 col-lg-4 mb-2">
