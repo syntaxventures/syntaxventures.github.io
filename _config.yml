@@ -6,7 +6,7 @@ title: 'Syntax.Ventures'
 collections:
   services:
     output: true
-    permalink: /services/:path/
+    permalink: /spaces/:path/
   team:
     output: true
     permalink: /team/:path/
